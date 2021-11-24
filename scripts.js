@@ -17,11 +17,12 @@ function initiate() {
   today = new Date();
   difference = new Date(date - today);
 
-  year = date.getFullYear() - today.getFullYear();
-  month = difference.getMonth() * year;
-  console.log([year, month, difference.getMonth() + 1]);
+  dayMili = 86400000;
+  yearMili = dayMili * 365;
+  some_variable = Math.trunc((new Date(date - 31536000000) - today) / dayMili);
+  console.log(some_variable);
 
-  day = difference.getDate() + month * 30;
+  day = some_variable < 0 ? 365 + some_variable : 365 - some_variable;
   hours = 24 - today.getHours();
   minutes = 60 - today.getMinutes();
   seconds = 60 - today.getSeconds();
