@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="screen1">
+      <div class="box">
+        <h1 class="title">Contador</h1>
+        <p>Informe uma data</p>
+        <input type="text" name="date" id="date" placeholder="DD/MM/AAAA" />
+        <button onclick="initiate()">Iniciar contagem</button>
+      </div>
+    </section>
+    <section id="screen2" style="display: none">
+      <header>
+        <h1 class="title">Contador</h1>
+        <button onclick="reiniciar()">Reiniciar</button>
+      </header>
+      <main class="sub-screen">
+        <h1 class="title2">Faltam</h1>
+        <div class="boxes">
+          <div class="box2">
+            <span class="dynamic-number" id="day">00</span>
+            <p class="number-description">Dias</p>
+          </div>
+          <div class="box2">
+            <span class="dynamic-number" id="hour">00</span>
+            <p class="number-description">Horas</p>
+          </div>
+          <div class="box2">
+            <span class="dynamic-number" id="minute">00</span>
+            <p class="number-description">Minutos</p>
+          </div>
+          <div class="box2">
+            <span class="dynamic-number" id="second">00</span>
+            <p class="number-description">Segundos</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
