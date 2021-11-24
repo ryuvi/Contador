@@ -15,12 +15,12 @@ function initiate() {
 
   date = new Date(dateValue);
   today = new Date();
-  difference = new Date(date - today);
+  //difference = new Date(date - today);
 
   dayMili = 86400000;
   yearMili = dayMili * 365;
-  some_variable = Math.trunc((new Date(date - 31536000000) - today) / dayMili);
-  console.log(some_variable);
+
+  some_variable = Math.trunc((new Date(date - yearMili) - today) / dayMili);
 
   day = some_variable < 0 ? 365 + some_variable : 365 - some_variable;
   hours = 24 - today.getHours();
@@ -28,10 +28,6 @@ function initiate() {
   seconds = 60 - today.getSeconds();
 
   interval = setInterval(() => {
-    parseInt(seconds);
-    parseInt(minutes);
-    parseInt(hours);
-    parseInt(day);
     if (seconds <= 0) {
       minutes--;
       seconds = 60;
