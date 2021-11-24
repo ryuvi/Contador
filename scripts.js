@@ -1,6 +1,15 @@
 let section1 = document.getElementById("screen1");
 let section2 = document.getElementById("screen2");
-let dateValue, date, today, difference, day, hours, minutes, seconds, interval;
+let dateValue,
+  date,
+  today,
+  difference,
+  day,
+  hours,
+  minutes,
+  seconds,
+  interval,
+  year;
 
 /* ESCOLHER COR */
 
@@ -17,12 +26,23 @@ function initiate() {
   today = new Date();
   //difference = new Date(date - today);
 
+  year =
+    date.getFullYear() - today.getFullYear() > 0
+      ? 365 * (date.getFullYear() - today.getFullYear())
+      : 365;
   dayMili = 86400000;
-  yearMili = dayMili * 365;
+  yearMili = dayMili * year;
 
-  some_variable = Math.trunc((new Date(date - yearMili) - today) / dayMili);
+  if (
+    `${date.getDate()}-${date.getMonth}` !=
+    `${today.getDate()}-${today.getMonth()}`
+  )
+    some_variable = Math.trunc((new Date(date - yearMili) - today) / dayMili);
 
-  day = some_variable < 0 ? 365 + some_variable : 365 - some_variable;
+  day = some_variable < 0 ? year + some_variable : year - some_variable;
+
+  //if (day < 0) day *= -1;
+
   hours = 24 - today.getHours();
   minutes = 60 - today.getMinutes();
   seconds = 60 - today.getSeconds();

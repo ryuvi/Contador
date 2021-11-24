@@ -135,5 +135,5 @@ body {
 .number-description {
   color: var(--green);
   font-size: 2.5em;
-  width: auto;
+  text-align: center;
 }
