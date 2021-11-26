@@ -19,7 +19,7 @@
 
 - [Desafio](#desafio)
 	- [Requisitos](#requisitos)
-- [Techs](#Techs-Usadas)
+- [Techs](#techs)
 
 
 # Desafio
