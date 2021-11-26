@@ -18,30 +18,29 @@
 ## Índice
 
 - [Desafio](#desafio)
-- [Techs](#techs)
-- [Como começar](#como-começar)
-- [Dicas](#dicas)
-  - [Cores](#cores)
-  - [Modelo](#modelo)
-  - [Tipo de fonte](#tipo-de-fonte)
-- [Compartilhe](#compartilhe)
+	- [Requisitos](#requisitos)
+- [Techs](#Techs-Usadas)
+
 
 # Desafio
 
 Criar um contador (com dias, horas, minutos e segundos), a partir de uma data definida pelo usuário!
 
-<!-- <img src="https://i.ibb.co/HhNTTzB/mockuper-6.png" width="450" height="350">
-<img src="https://i.ibb.co/9cMFW5s/mockuper-7.png" width="450" height="350"> -->
+<div style="display: flex; justify-content: center;">
+<img src="https://i.ibb.co/HhNTTzB/mockuper-6.png" width="225" height="175" style="margin-right: 25px">
+<img src="https://i.ibb.co/9cMFW5s/mockuper-7.png" width="225" height="175" style="margin-left: 25px">
+</div>
 
-# Techs:
-
-Javascript<br>
-HTML<br>
-CSS<br>
-
-# Requisitos:
+## Requisitos
 
 - Sua aplicação deverá conter uma tela inicial, onde deverá perguntar ao usuário uma data<br>
 - Sua página deverá conter uma página com o contador (contendo dias, horas, minutos e segundos). A contagem deverá ser feita levando em consiração quantos dias faltam para chegar na data definida pelo usuário.
 - O botão "reiniciar" irá retornar o usuário para a tela inicial
 - Poderá ser usado o modelo da página, que está disponvel na página "design".
+
+
+# Techs
+
+Javascript<br>
+HTML<br>
+CSS<br>
